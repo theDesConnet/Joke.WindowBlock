@@ -3,7 +3,7 @@ The joke program Block and minimazed active window
 
 Links
 
-YouTube: https://www.youtube.com/channel/UCsKC-cU51wQN_jz-jUrzu-A
+YouTube: https://youtube.com/DesConnet
 
 VK: https://vk.com/endnet
 
